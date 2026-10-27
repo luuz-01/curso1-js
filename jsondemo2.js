@@ -9,5 +9,5 @@ async function obtenerPersonaje(){}
     const respuesta = await fetch (API_URL)
 
   }catch(e){
-    console.error(`No se pudo concretar la operación`)
+    console.error(`No se pudo concretar la operación: ${e}`)
   }
