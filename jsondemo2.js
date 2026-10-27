@@ -1,5 +1,5 @@
 //PASO 1: URL (endpoint)
-const API_URL = 'https://dragonball-api.com/api/characters/35'
+const API_URL = 'https://dragonball-api.com/api/characters/68'
 
 //PASO 2: Función asíncrona (tiempos distintos/diferidos) - Latencia
 async function obtenerPersonaje(){}
