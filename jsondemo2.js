@@ -18,7 +18,11 @@ async function obtenerPersonaje(){}
     const datos = await respuesta.json()
 
     //PASO 7 
-    console.log (datos)
+    //console.log (datos)
+
+    //Mostrar solo el nombre de las transformaciones
+
+    
   }catch(e){
     console.error(`No se pudo concretar la operación: ${e}`)
   }
