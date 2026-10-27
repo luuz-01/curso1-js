@@ -10,15 +10,16 @@
 //10 MINUTOS
 
 
+//Construir un objeto con los datos una película
+
 const pelicula = {
   titulo : "Los Juegos del Hambre",
   anio: 2012,
+  idiomas: ["Ingles","Español","Frances"],
+  duracionMin:142,
+  generos:["ciencia ficción", "acción", "drama", "distopía"],
   presupuesto:78000000,
   recaudacion:694500000,
-  reEstreno: true,
-  generos:["ciencia ficción", "acción", "drama", "distopía"],
-  sinopsis:["2 trubutos de 12 distritos se enfrentan a muerte, mistras en el transcurso se revelan al capitolio"] ,
-  
   elenco:[
     {
       nombres:"Jennifer Lawrence", personaje:"	Katniss Everdeen", rol:"Protagonista Femenina"},
@@ -37,6 +38,34 @@ const pelicula = {
     {
       nombres:"Willow Shields", personaje:"Primrose Everdeen", rol:"Hermana menor de la protagonista"
     }
-  ],
 
+
+  ],
+  sinopsis:["2 trubutos de 12 distritos se enfrentan a muerte, mistras en el transcurso se revelan al capitolio"] ,
+  direccion: ["Gary Ross"],
+  escritores:["Billy Ray","Gary Ross","Suzanne Collins"],
+  UC:{
+    peliculas: ["Los juegos del Hambre (2012)",
+      "Los juegos del hambre: en llamas (2013)",
+      "Los juegos del hambre: sinsajo (2014-2015)",
+      "Los juegos del hambre: balada de pájaros cantores y serpientes (2023)",
+      "Los juegos del hambre: amanecer en la cosecha (2026)"],
+    libros: [""]
+  }
 }
+
+//Cuál es el ultimo elemento de idiomas
+console.log(pelicula.idiomas[pelicula.idiomas.length -1])
+
+//¿Cual es el personaje del primer actor?
+console.log(pelicula.elenco[0].personaje) 
+
+//¿Cual es el rol del ultimo actor
+console.log(pelicula.elenco[pelicula.elenco.length -1].rol)
+
+//Mostrar todas las series del MCU
+//const series = pelicula.mcu.series
+ // series.forEach(serie => {
+  //  console.log(serie)
+    
+ // });
