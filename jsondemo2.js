@@ -17,6 +17,8 @@ async function obtenerPersonaje(){}
     //JSON (cadena)  > OBJECT JS
     const datos = await respuesta.json()
 
+    //PASO 7 
+    console.log (datos)
   }catch(e){
     console.error(`No se pudo concretar la operación: ${e}`)
   }
