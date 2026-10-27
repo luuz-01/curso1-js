@@ -47,10 +47,14 @@ const pelicula = {
   UC:{
     peliculas: ["Los juegos del Hambre (2012)",
       "Los juegos del hambre: en llamas (2013)",
-      "Los juegos del hambre: sinsajo (2014-2015)",
+      "Los juegos del hambre: sinsajo parte1 (2014)",
+      "Los juegos del hambre: sinsajo parte2 (2015)",
       "Los juegos del hambre: balada de pájaros cantores y serpientes (2023)",
       "Los juegos del hambre: amanecer en la cosecha (2026)"],
-    libros: [""]
+    libros: ["Los juegos del hambre",
+              "En llamas",
+              "Balada de pájaros cantores y serpientes",
+              "Amanecer en la cosecha"]
   }
 }
 
@@ -63,9 +67,9 @@ console.log(pelicula.elenco[0].personaje)
 //¿Cual es el rol del ultimo actor
 console.log(pelicula.elenco[pelicula.elenco.length -1].rol)
 
-//Mostrar todas las series del MCU
-//const series = pelicula.mcu.series
- // series.forEach(serie => {
-  //  console.log(serie)
+//Mostrar todas los libros del UC
+const libros = pelicula.UC.libros
+  libros.forEach(libros => {
+  console.log(libros)
     
- // });
+  });
