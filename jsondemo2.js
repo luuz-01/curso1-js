@@ -21,8 +21,11 @@ async function obtenerPersonaje(){}
     //console.log (datos)
 
     //Mostrar solo el nombre de las transformaciones
+    const transformations = datos.transformations
+    transformations.forEach(transformations =>{
+      console.log(transformations.name)
+    })
 
-    
   }catch(e){
     console.error(`No se pudo concretar la operación: ${e}`)
   }
