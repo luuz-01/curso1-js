@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    async function obtenerDatos (){
+      const API_URL = `https://api.restcountries.com/countries/v5?q=canada`
+      
+      try{ 
+        const respuesta = await fetch(API_URL,{
+        headers {'Authorization': 'Bearer rc_live_36d23537b6e24a7a949eac1c06f067f3'}
+
+      })
+
+    }
+  </script>
+</body>
+</html>
